@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nostra</title>
-    <!--tailwindcss link-->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <!--google font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <!--styelsheet link-->
     <link href="style.css" rel="stylesheet">
@@ -16,43 +18,58 @@
 <body>
     <!-- head popup-->
      <div  id="popup" class="popuphead">
-        <p style="font-size: 12px;">sign up and GET 20% OFF for our first order</p>
+        <p>sign up and GET 20% OFF for our first order</p>
         <p id="close" style="cursor:pointer" >x</p>
      </div>
 
      <!--Navbar-->
      <div class="navbar">
-
-        <h1>Nostra</h1>
-        <i class="fa-solid fa-bars" id="menubutn" style="font-size: 25px;"></i>
+       <div class="navbar__brand">
+        <i class="fa-solid fa-bars" id="menubutn" style="font-size: 22px;"></i>
+        <h1>nostra</h1>
+       </div>
+        
+        <div class="navbar__card">
+           
+            <i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i>
+            <i class="fa-solid fa-user" style="font-size: 21px;"></i>
+        </div>
+    
         <div class="navlist">
+            <div class="navlist__head">
+                <h1>Ⓝnostra</h1> 
+            </div>
+            <div class="navlist__list">
             <a href="index.html">Home</a>
-            <a href="#">New Arrival</a>
-            <a href="#">Most Wanted</a>
+            <a href="#arrival">New Arrival</a>
+            <a href="#wanted">Most Wanted</a>
             <a href="collection.html">Collection</a>
             <a href="contact.html">Conatact Us</a>
         </div>
+     </div>
      </div>
      
     <!--navbar menu-->
 
     <div  class="slideoption">
+       
         <p id="cut" class="Xclose">X</p>
-        <a href="index.html">Home</a>
-        <a href="#" id="newarrivel">New Arrival</a>
-        <a href="#">Most Wanted</a>
-        <a href="collection.html">Collection</a>
-        <a href="contact.html">Conatact Us</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#arrival" id="newarrivel"><i class="fa-brands fa-bluesky"></i> New Arrival</a>
+        <a href="#wanted"><i class="fa-brands fa-atlassian"></i> Most Wanted</a>
+        <a href="collection.html"><i class="fa-brands fa-shopify"></i> Collection</a>
+        <a href="contact.html"><i class="fa-brands fa-weixin"></i> Conatact Us</a>
     
     </div>
 
 <!--landscope img-->
+<section class="bigimage">
 <div class="landscope__container">
        <div class="landscope">
         <img src="./images/slider-one.jpg">
  
        </div>
-
+    </section>
     <div class="pos">
         <h1>Level up your style with our</h1>
         <p>Summer Collections</p>
@@ -65,21 +82,33 @@
     </div>
 </div>    
     <!--Brands logo-->
-    <div class="brands__head">
-    <h1>Brands</h1>
+ <section class="brands">
+    <div class="Brands__head">
+    <h3>Brands</h3>
 </div>
-    <div class="brands">
-        <h6> <i class="fa-brands fa-rebel"></i>Puma</h6>
-        <h6><i class="fa-brands fa-skype"></i>Skype</h6>
-        <h6><i class="fa-brands fa-pied-piper"></i>Piper</h6>
-        <h6><i class="fa-brands fa-free-code-camp"></i> Camp</h6>
-        <h6><i class="fa-brands fa-slack"></i>Slack</h6>
-        <h6><i class="fa-brands fa-pagelines"></i>lines</h6>
-        <h6><i class="fa-brands fa-gitlab"></i>gitlap</h6>
-
+    <div class="brands__logo">
+        <div class="logo">
+            <i class="fa-brands fa-vuejs"></i>
+            <p>vjs</p>
+        </div>
+        <div class="logo">
+            <i class="fa-brands fa-wolf-pack-battalion"></i>
+            <p>wf</p>
+        </div>
+        <div class="logo">
+            <i class="fa-brands fa-wordpress-simple"></i>
+            <p>wp</p>
+        </div>
+        <div class="logo">
+            <i class="fa-brands fa-vnv"></i>
+            <p>vnv</p>
+        </div>
+        <div class="logo">
+            <i class="fa-brands fa-typo3"></i>
+            <p>tyo</p>
+        </div>
     </div>
-
-
+ </section>
     <!--text page-->
     <div class="container">
         <h4>We Provide Best Customer Experiences</h4>
@@ -106,7 +135,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
             </div>
             
-    <div class="boxs">
+    <div class="boxs" id="arrival">
         <i class="fa-solid fa-pen-nib"></i>
     <h1>Fast & Free Shipping</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
@@ -115,9 +144,10 @@
 </div>
 
 <!--new arrivel-->
- <div class="arrivel__head">
-<h1>New Arrivel</h1>
- </div>
+<section class="newarrivel__container">
+
+<h3>New Arrivel</h3>
+ 
 <div class="newarrivel">
 
 <div class="newarrivel__imgs">
@@ -128,7 +158,7 @@
     <img src="./images/s2.jpg">
     <button class="click">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
 </div>
-<div class="newarrivel__imgs">
+<div class="newarrivel__imgs" id="wanted">
     <img src="./images/s3.jpg">
     <button class="click">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
 </div>
@@ -137,32 +167,34 @@
     <button class="click">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
 </div>
 </div>
- 
+</section>
+
 
 <!--most wanted-->
-<div class="wanted__head">
-<h1>Most Wanted</h1>
+<section>
+<div class="wanted__head"> 
+<h3>Most Wanted</h3>
 </div>
 <div class="mostwanted">
 
 <div class="mostwanted__imgs">
-    <img src="./images/s3.jpg">
+    <img src="./images/blue.jpg">
     <button class="click2">Sale</button>
 </div>
 <div class="mostwanted__imgs">
-    <img src="./images/s6.jpg">
+    <img src="./images/green.webp">
     <button class="click2">Sale</button>
 </div>
 <div class="mostwanted__imgs">
-    <img src="./images/s1.jpg">
+    <img src="./images/red.jpg">
     <button class="click2">Sale</button>
 </div>
 <div class="mostwanted__imgs">
-    <img src="./images/s2.jpg">
+    <img src="./images/white.jpg">
     <button class="click2">Sale</button>
 </div>
 </div>
-
+</section>
 <!--landscope2-->
 
 <div class="l2">
@@ -184,13 +216,17 @@
 
 <!--end-->
 <div class="nostra">
-    <h1>Nostra</h1>
-    <p style="font-size: 12px;">The standard chunk of signup our email newspaper to get exclusive discounts,updates,and more</p>
+    <h1>Ⓝnostra</h1>
+    <p style="font-size: 12px;">The standard chunk of signup our email newspaper to get exclusive discounts,updates,and more,Nostra is an eCommerce platform that focuses on selling stylish and trendy clothing. It offers a wide range of apparel for men, women, and children, including casual wear, formal wear, and seasonal collections. The platform provides a seamless shopping experience with features like easy navigation, secure payments, fast delivery, and customer support. Nostra also frequently runs sales, discounts, and exclusive offers, making it a great destination for fashion lovers. Let me know if you need more details! </p>
    <div class="sm">
-    <P><i class="fa-brands fa-instagram"></i></P>
-    <p><i class="fa-brands fa-twitter"></i></p>
-    <p><i class="fa-brands fa-facebook"></i></p></div>
-    <p style="font-size: 12px;">@ 2025 Nostra.com</p>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+
+</div>
+    <p style="font-size: 12px;"> &copy 2025 Nostra.com</p>
 </div>
 
 

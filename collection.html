@@ -12,6 +12,11 @@
 
     <!--icon link-->
  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+ <!--google font-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     
 
 </head>
 <body>
@@ -21,32 +26,45 @@
       <p id="clo" style="cursor:pointer">X</p>
    </div>
 
-   <!--Navbar-->
-   <div class="navbar">
-
-      <h1>Nostra</h1>
-      <i class="fa-solid fa-bars" id="menubutn" style="font-size: 25px;"></i>
-      <div class="navlist">
-          <a href="index.html">Home</a>
-          <a href="#">New Arrival</a>
-          <a href="#">Most Wanted</a>
-          <a href="collection.html">Collection</a>
-          <a href="contact.html">Conatact Us</a>
+     <!--Navbar-->
+     <div class="navbar" style="padding: 10px;">
+      <div class="navbar__brand">
+       <i class="fa-solid fa-bars" id="menubutn" style="font-size: 22px;"></i>
+       <h1 style="font-weight: 900;">nostra</h1>
       </div>
-   </div>
+       
+       <div class="navbar__card">
+          
+           <i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i>
+           <i class="fa-solid fa-user" style="font-size: 21px;"></i>
+       </div>
    
-  <!--navbar menu-->
+       <div class="navlist">
+           <div class="navlist__head">
+               <h1 style="font-weight: 900; font-size: 35px;">Ⓝnostra</h1> 
+           </div>
+           <div class="navlist__list">
+           <a href="index.html">Home</a>
+           <a href="#arrival">New Arrival</a>
+           <a href="#wanted">Most Wanted</a>
+           <a href="collection.html">Collection</a>
+           <a href="contact.html">Conatact Us</a>
+       </div>
+    </div>
+    </div>
+    
+   <!--navbar menu-->
 
-  <div  class="slideoption">
-      <p id="cut" class="Xclose">X</p>
-      <a href="index.html">Home</a>
-      <a href="#">New Arrival</a>
-      <a href="#">Most Wanted</a>
-      <a href="collection.html">Collection</a>
-      <a href="contact.html">Conatact Us</a>
-  
-  </div>
-
+   <div  class="slideoption">
+      
+       <p id="cut" class="Xclose">X</p>
+       <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+       <a href="#arrival" id="newarrivel"><i class="fa-brands fa-bluesky"></i> New Arrival</a>
+       <a href="#wanted"><i class="fa-brands fa-atlassian"></i> Most Wanted</a>
+       <a href="collection.html"><i class="fa-brands fa-shopify"></i> Collection</a>
+       <a href="contact.html"><i class="fa-brands fa-weixin"></i> Conatact Us</a>
+   
+   </div>
     <!--collection container-->
     <div class="collection">
 
