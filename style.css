@@ -2,6 +2,8 @@
 .body{
     font-family: "Poppins", sans-serif;
     font-size: 13px;
+    margin: 0;
+    padding: 0;
  
 }
 .popuphead{
@@ -11,6 +13,11 @@
     color: white;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
     
 }
 .navbar__brand{
@@ -20,6 +27,9 @@
     color: rgb(35, 22, 155);
     margin-left: 10px;
    
+}
+.navbar__brand h1{
+    font-size: 24px;
 }
 .navbar__card{
     display: flex;
@@ -61,7 +71,7 @@
     color: black;
     padding: 15px;
     height: 100%;
-    width: 40%;
+    width: 50%;
     position: fixed;
     top: 0;
     animation-name: slide;
@@ -91,7 +101,10 @@
     color: rgb(35, 22, 155);
 }
 
-   
+.pos__box:hover{
+    background-color: rgb(13, 194, 58);
+    color: white;
+}
     .landscope{
         display: flex;
         justify-content: center;  
@@ -108,7 +121,7 @@
         text-align: center;
         color: white;
         position: absolute;
-        top: 190px;
+        top: 120px;
         left: 120px;
         overflow-x: hidden;
     }
@@ -129,20 +142,20 @@
         padding: 3px;
         text-align: center;
         position: relative; 
-        left:50px;
+        left:40px;
         font-size: 10px;
     }
     .lessthann{
         font-size: 60px;
         position: absolute;
-        top: 190px;
+        top: 120px;
         left: 280px;
         color: white;
     }
     .greaterr{
         font-size: 60px;
         position: absolute;
-        top: 190px;
+        top: 120px;
         left: 50px;
         color: white;
     }
@@ -338,9 +351,12 @@
             display: grid;
             margin-top: 10px;
             padding: 10px;
-            text-align: center;
+            gap: 10px;
+            
 
           } 
+          .nostra p{
+          font-size: 13px;}
           .nostra h1{
             color: rgb(35, 22, 155);
             font-style: italic;
@@ -436,6 +452,9 @@
             body{
                 font-size: 22px;
             }
+            .popuphead p{
+               font-size: 16px;
+            }
             .navbar__brand{
                 display: none;
             }
@@ -460,8 +479,12 @@
             color: rgb(33, 33, 37);
          }
          .navlist__list a:hover{
-            color: rgb(211, 61, 16);
+            background-color: blue;
+            border-radius: 7px;
+            padding: 3px;
+            color: white;
          }
+        
         .navlist__head{
             color: rgb(29, 9, 206);
             margin-left: 15px;
@@ -474,7 +497,7 @@
             justify-content: center;
             color: white;
             position: absolute;
-            top: 270px;
+            top: 200px;
             left: 400px;
             
             
@@ -492,21 +515,18 @@
             border-radius: 8px;
             font-style: italic;
         }
-        .pos__box:hover{
-            background-color: rgb(13, 194, 58);
-            color: white;
-        }
+       
         .lessthann{
             font-size: 140px;
             position: absolute;
-            top: 290px;
+            top: 200px;
             left: 900px;
             color: white;
         }
         .greaterr{
             font-size: 140px;
             position: absolute;
-            top: 290px;
+            top: 200px;
             left: 270px;
             color: white;
         }
@@ -605,5 +625,11 @@
         .shirt__con h6{
             font-size: 21px;
         }
-
+         .nostra{
+            gap: 20px;
+         }
+         .nostra h1{
+            font-size: 30px;
+            font-weight: 900;
+         }
           }
