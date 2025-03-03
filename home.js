@@ -26,33 +26,31 @@ function autoSlide() {
 
 setInterval(autoSlide, 3000); // Change slide every 3 seconds
 
-function startCountdown(endTime) {
-  function updateTimer() {
-      const now = new Date().getTime();
-      const timeLeft = endTime - now;
+function startCountdown(durationInSeconds) {
+  let timeLeft = durationInSeconds;
 
+  function updateTimer() {
       if (timeLeft <= 0) {
           document.getElementById("countdown").innerHTML = "🚀 Offer Expired!";
           clearInterval(timer);
           return;
       }
-
-      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      const hour = Math.floor(timeLeft/3600)
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
 
       document.getElementById("countdown").innerHTML =
-          `${days}d ;${hours}h ;${minutes}m ;${seconds}s`;
+          `${hour}h ; ${minutes}m ;${seconds}s`;
+
+      timeLeft--;
   }
 
-  updateTimer(); // Call initially to avoid delay
+  updateTimer(); // Initial call to avoid delay
   let timer = setInterval(updateTimer, 1000);
 }
 
-// Set offer expiry date (YYYY, MM (0-11), DD, HH, MM, SS)
-const offerEndTime = new Date(2025, 2, 10, 23, 59, 59).getTime(); // March 10, 2025, 11:59:59 PM
-startCountdown(offerEndTime);
+// Start countdown for 1 hour (3600 seconds)
+startCountdown(3600);
 
 
 
