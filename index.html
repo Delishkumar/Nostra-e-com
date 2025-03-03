@@ -66,8 +66,10 @@
 <section class="bigimage">
 <div class="landscope__container">
        <div class="landscope">
+        <img src="./images/fashion.jpg">
+        <img src="./images/fashion2.jpg">
         <img src="./images/slider-one.jpg">
- 
+    
        </div>
     </section>
     <div class="pos">
@@ -76,9 +78,9 @@
         <button class="pos__box">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 
-    <div class="lessthann"><i class="fa-solid fa-greater-than fa-2xs" style="color: #edeff2;" id="lessthan"></i> </div> 
+    <div class="lessthann" onclick="nextSlide()"><i class="fa-solid fa-greater-than fa-2xs" style="color: #edeff2;" id="lessthan"></i> </div> 
     
-    <div class="greaterr"><i class="fa-solid fa-less-than fa-2xs" style="color: #f0f5f3;" id="greater"></i>
+    <div class="greaterr" onclick="nextSlide()"><i class="fa-solid fa-less-than fa-2xs" style="color: #f0f5f3;" id="greater"></i>
     </div>
 </div>    
     <!--Brands logo-->
@@ -174,6 +176,11 @@
 <section>
 <div class="wanted__head"> 
 <h3>Most Wanted</h3>
+</div>
+<div class="offer-box">
+    <h4>🔥 Limited Time Offer! 🔥</h4>
+    <p>Hurry up! Offer expires in:</p>
+    <div class="countdown" id="countdown"></div>
 </div>
 <div class="mostwanted">
 

@@ -9,7 +9,7 @@
 .popuphead{
     display: flex;
     gap: 60px;
-    background-color: rgb(230, 120, 120);
+    background-color: rgb(228, 18, 18);
     color: white;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@
 
 @keyframes slide {
        from{
-        transition: 1s;
+        transition: 0.3s;
         transform: translateX(-50px);
        }
     }
@@ -107,27 +107,41 @@
 }
     .landscope{
         display: flex;
-        justify-content: center;  
+        justify-content: center;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
     }
 
     .landscope img{
-        border-radius: 10px;
-        width:100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         
     }
-
+    .landscope__container{
+        width: 98%;
+        max-width: 1220px;
+        min-height: 180px;
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
     .pos{
         display: grid;
         text-align: center;
-        color: white;
+        color: rgb(242, 244, 245);
         position: absolute;
-        top: 120px;
+        top: 160px;
         left: 120px;
         overflow-x: hidden;
     }
     .pos h1{
     font-size: 11px;
     font-weight: bold;
+    position: relative;
+    top: 10px;
     }
     .pos p{
         font-size: 9px;
@@ -135,7 +149,7 @@
 
     
     .pos__box{
-        background-color: rgb(235, 227, 228);
+        background-color: rgb(244, 249, 250);
         color: black;
         border: groove transparent 1px;
         width: fit-content;
@@ -144,20 +158,22 @@
         position: relative; 
         left:40px;
         font-size: 10px;
+        border-radius: 4px;
+        font-style: italic;
     }
     .lessthann{
         font-size: 60px;
         position: absolute;
-        top: 120px;
+        top: 170px;
         left: 280px;
-        color: white;
+        color:rgb(228, 238, 240);
     }
     .greaterr{
         font-size: 60px;
         position: absolute;
-        top: 120px;
+        top: 170px;
         left: 50px;
-        color: white;
+        color:rgb(216, 221, 221);
     }
 
     .brands__logo{
@@ -291,7 +307,19 @@
         color: white;
 
     }
-
+  .offer-box{
+    margin: 10px;
+    background-color: rgb(157, 197, 212);
+    padding: 10px;
+    border-radius: 10px;
+  }
+   
+    .countdown {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(230, 104, 20);
+        margin-bottom: 10px;
+    }
     .l2{
         background-color: rgb(32, 30, 37);
         padding: 20px;
@@ -427,7 +455,7 @@
 
           }
           .shirt__con img{
-            width: 100%;
+            width: 90%;
             height: 70%;
             
         
@@ -497,13 +525,15 @@
             justify-content: center;
             color: white;
             position: absolute;
-            top: 200px;
+            top: 120px;
             left: 400px;
             
             
         }
         .pos h1{
             font-size: 35px;
+            position: relative;
+            top: 50px;
         }
         .pos p{
             font-size: 24px;
@@ -517,16 +547,16 @@
         }
        
         .lessthann{
-            font-size: 140px;
+            font-size: 110px;
             position: absolute;
-            top: 200px;
+            top: 170px;
             left: 900px;
             color: white;
         }
         .greaterr{
-            font-size: 140px;
+            font-size: 110px;
             position: absolute;
-            top: 200px;
+            top: 170px;
             left: 270px;
             color: white;
         }
